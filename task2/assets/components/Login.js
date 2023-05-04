@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { styles } from "../styles/Styles";
-const Login = () => {
+const Login = ({ navigation }) => {
   return (
     <View style={[styles.dark, styles.loginPageContainer]}>
       <View style={styles.loginContainer}>
@@ -38,7 +38,9 @@ const Login = () => {
         </View>
       </View>
       <View style={styles.createAccountContainer}>
-        <Text style={styles.linkText}>Don't have an account? Create one</Text>
+        <TouchableOpacity onPress={()=> navigation.navigate("Signup")}>
+          <Text style={styles.linkText}>Don't have an account? Create one</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
