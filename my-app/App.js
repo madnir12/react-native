@@ -12,7 +12,7 @@ const Form = () => {
   };
 
   return (
-    <View style={tw`flex-1 justify-center items-center bg-gray-100`}>
+    <View style={tw`flex-1 justify-center items-center bg-black`}>
       <View style={tw`w-4/5`}>
         <TextInput
           style={[
